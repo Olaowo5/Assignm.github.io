@@ -1,0 +1,238 @@
+/*
+    Style page for all pages.
+*/
+
+/* GENERAL SECTION - START */
+* {
+    /* remove padding for all elements */
+    padding: 0;
+    /* remove margin for all elements*/
+    margin: 0;
+    /* padding and margin get subtracted from width */
+    box-sizing: border-box;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* GENERAL SECTION - END */
+
+
+/* HEADER SECTION - START */
+header {
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 5pt;
+    border-bottom: 4px solid darkgreen;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    color: darkgreen;
+    width: 40%;
+
+}
+
+header div.active-user-section {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+header div.active-user-section img.active-user-avatar {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header div.active-user-section span.active-user-name {
+    display: block;
+    font-size: 20px;
+}
+
+header nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    width: 31%;
+    margin: auto 1%;
+}
+
+header nav a:hover {}
+
+header nav a.active {}
+
+/* HEADER SECTION - END */
+
+
+
+/* FOOTER SECTION - START */
+footer {
+    border-top: 4px solid darkgreen
+}
+
+footer p.copyright {
+    text-align: center;
+}
+
+footer a.toTop {}
+
+/* FOOTER SECTION - END */
+
+
+
+/* INDEX SECTION - START */
+
+
+/* INDEX SECTION - END */
+
+
+
+/* PROJECT EXPLORER SECTION - START */
+
+#form {
+    border: 1px solid black;
+    padding: 10px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 6;
+}
+
+.projectlist {
+    grid-column: 3 / 13;
+    border: 1px solid black;
+
+    padding: 10px;
+}
+
+div.projectlist ul {
+    text-align: right;
+}
+
+div.projectlist ul li {}
+
+#project1 {
+    grid-row: 2 / 3;
+}
+
+#project2 {
+    grid-row: 3 / 4;
+}
+
+#project3 {
+    grid-row: 4 / 5;
+}
+
+#project4 {
+    grid-row: 5 / 6;
+}
+
+main {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    display: grid;
+}
+
+#pagetitle {
+    grid-column: 3/13;
+    grid-row: 1 / 2;
+    padding: 10px;
+}
+
+#pagetitle h1 {
+    text-align: center;
+}
+
+.projectlist p {
+    text-align: right;
+}
+
+#pagetitle {
+    text-align: right;
+}
+
+/* PROJECT EXPLORER SECTION - END */
+
+
+
+/* ABOUT US SECTION - START */
+
+main.about {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    display: grid;
+}
+
+#pageheadings {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+#information {
+    grid-column: 4 / 10;
+    grid-row: 1;
+}
+
+#externallinks {
+    grid-column: 10 / 13;
+    grid-row: 1;
+}
+
+#davidphoto {
+    grid-column: 1 / 7;
+    grid-row: 2;
+}
+
+#davidinfo {
+    grid-column: 7 / 13;
+    grid-row: 2;
+}
+
+#olamideinfo {
+    grid-column: 1 / 7;
+    grid-row: 3;
+}
+
+#olamidephoto {
+    grid-column: 7 / 13;
+    grid-row: 3;
+}
+
+#valeriephoto {
+    grid-column: 1 / 7;
+    grid-row: 4;
+}
+
+#valerieinfo {
+    grid-column: 7 / 13;
+    grid-row: 4;
+}
+
+#ollieinfo {
+    grid-column: 1 / 7;
+    grid-row: 5;
+}
+
+#olliephoto {
+    grid-column: 7 / 13;
+    grid-row: 5;
+}
+
+.us {
+    height: 60%;
+    width: 60%;
+}
+
+.group {
+    height: 80%;
+    width: 80%;
+}
+
+/* ABOUT US SECTION - END */
